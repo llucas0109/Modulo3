@@ -8,19 +8,29 @@
         /*Colocamos uma cor de fundo mesmo co fundo sendoa a imagem para que quando o usuario for acessar o site ele posso mexer sem que a imagens estaja totalente carregada prieiro carrega o a texto depois ve as iagens o ideial é ter umfundo atras.*/
         body{
             height: 100vh; /*Preste atençao nos view porte e nas 'interaçoes' co outros elementos*/
-            background-color: black;
+           /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-repeat: repeat-y;
             background-position: center center;
-            background-size: auto; /*Cobre cortando a imagem para adaptar na view*/
+            background-size: cover; /*Cobre cortando a imagem para adaptar na view*/
 
             /*Podemos usar porcentagem e altura e largura em backgroud size
             o que faria a imagem se expremer ou espandir  e tambe temos o contein quecria barras laterais ou horizontais tentando adaptar a imagem*/
+            /*background-attachment: fixed; /*fixed a imagem ficafixa scroll imagem acompanha o conteudo*/
+             
+            /*Os Short-hand from this things sao 
+            background: color>imagem>Posiçao>reapeat>[size]>attachment
+            
+            O size desse Short hand nao funciona muito bem entao simpleente retiraos ele e colocamos ele separadamente
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;/*vai diinuindo ou almentando o zoo m*/
+            
         }
         main{
             background-color: white;
+            max-width: 700px; /*Se a iage Crescer ela vai crescer so ate 700pxo inverso para min-width*/
             padding: 10px;
-            width: 400px;
             border-radius: 20px;
             margin: auto;
             border: 1px solid blue;
