@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento</title>
+    <style>
+        section#conteiner{
+            position: relative;
+            height: 85vh;
+            border: 7px solid rgb(21, 24, 198);
+            background-color: rgb(203, 100, 35);
+            padding: 30px;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            
+        }
+        article#conteudo{
+            position: absolute; /*Quando colocamos position absolute temos que por altura e largura*/
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            height: 150px;
+            width: 200px;
+            left: 50%;
+            top: 50%;
+            background-color: rgb(125, 152, 27);
+            transform:  translate(-50%, -50%);
+            /*A diferença de usar transform:  translate(-50%, -50%) e top left em porcentagem depende de voce. o ais comun e usar transform:  translate(-50%, -50%) para centralizar objetos*/
+        }
+    </style>
+</head>
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
