@@ -27,10 +27,12 @@ header{
     color: lightgray;
     text-decoration: underline;
   }
-  article > p{
-    font-weight: 100;
+  article{
     width: 50%;
-    font-size: 250%;
+  }
+  article > p{
+    position: relative;
+    font-weight: 100;
   }
   article > p{
     font-family: 'Redressed';
@@ -50,6 +52,7 @@ header{
     height: 400px;
     background: black url('imagens/prediosazuis.png') center center no-repeat fixed;
     background-size: cover;/*vai diinuindo ou almentando o zoo m*/
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.516);
   }
     .section {/*Como padrao todas possiçao sao relativa*/
     position: absolute;
