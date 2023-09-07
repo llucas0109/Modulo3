@@ -27,17 +27,14 @@ header{
     color: lightgray;
     text-decoration: underline;
   }
-  article{
-    width: 50%;
-  }
-  article > p{
-    position: relative;
-    font-weight: 100;
-  }
+
   article > p{
     font-family: 'Redressed';
+    width: 50%;
+    font-size: 3vw;
     padding-left: 40px;
     text-indent: 30px;
+    font-weight: 100;
     line-height: 2em; /*Espaçamento entre linhas*/
   }
   div.imagen1{
@@ -67,7 +64,7 @@ header{
   .section p{
     font-family: 'smooch';
     font-weight: 100;
-    font-size: 30px;
+    font-size: 20px;
   }
   footer{
     background-color: rgb(62, 51, 51);

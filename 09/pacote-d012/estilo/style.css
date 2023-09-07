@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Smooch&display=swap');
+
+:root{
+    --font1: 'Redressed'; 
+    --font2: 'Smooch';
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -8,6 +14,7 @@ html, body{
     background-color: gray;
 }
 header{
+    font-family: var(--font1);
     background-color: black;
     color: white;
     text-align: center;
@@ -27,15 +34,35 @@ header a, footer a{
 header a:hover, footer a:hover{
 text-decoration: underline;
 }
+section > p {
+    padding-bottom: 2em;
+    text-indent: 30px;
+}
 section{
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: var(--font2);
     padding-bottom: 10vh;
     padding-top: 10vh;
     line-height: 2em;
     padding-left: 30px;
 }
+section.imagem#id01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover; 
+}
+section.imagem#id02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover; 
+}
 section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.233);
-    
+    display: inline-block; /*O conteudo naoocupara mais um bloco inteiro apenas os do paragrafos*/
+    padding: 20px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.582);
+    background-color: rgba(0, 0, 0, 0.502);
+
 }
 section.normal{
     background-color: white;
@@ -44,6 +71,8 @@ section.normal{
 }
 section.imagem{
     background-color: rgb(45, 19, 19);
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.356);
+    background-attachment: fixed;
     color: white;
 }
 footer{
