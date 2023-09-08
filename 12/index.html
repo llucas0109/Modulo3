@@ -15,24 +15,30 @@
             padding: 10px;
         }
         table{
+            position: relative;
             width: 300px;
         }
         td, th{
             border: 1px solid black;
             padding: 20px;
         }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
         tbody tr:nth-child(2n){ /*quando coloquei td nao funcionou para pulara uma linha acho que so funciona com linhas mesmos (tr) existe o odd e oe even que representa impar e par*/
             background-color: lightgrey;
         }
         tbody tr:nth-child(odd){ /*or '2n'*/
-            background-color: gray;
+            background-color: white;
         }
         tbody tr:nth-child(even){ /*or '2n-1'*/
-            background-color: gray;
+            background-color: lightgrey;
         }
         thead, tfoot{
             background-color: gray;
-            color: wheat;
+            color: white;
         }
     </style>
 </head>
@@ -123,5 +129,11 @@
         </tfoot>
         <caption>Vou para cima</caption>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quis dolorum maiores asperiores error cupiditate voluptas id fugit fugiat, possimus deleniti? Maxime soluta omnis iste commodi necessitatibus ex quo laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nobis, sint nihil officiis autem similique omnis exercitationem recusandae rem veniam. Nobis omnis laborum quia ratione explicabo perspiciatis iste deleniti facilis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni repellendus unde omnis, incidunt neque accusamus dicta labore tenetur harum natus alias deserunt ab fuga vero at, laudantium consequatur dolor. Accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ad quam obcaecati magnam velit illo iste facilis ratione sit corrupti, quibusdam, et, in voluptatem rem fugiat dolorem eaque nisi tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere qui est modi? Inventore odit quo nulla adipisci, assumenda exercitationem ullam optio possimus molestias modi labore rem ut eligendi qui?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quis dolorum maiores asperiores error cupiditate voluptas id fugit fugiat, possimus deleniti? Maxime soluta omnis iste commodi necessitatibus ex quo laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nobis, sint nihil officiis autem similique omnis exercitationem recusandae rem veniam. Nobis omnis laborum quia ratione explicabo perspiciatis iste deleniti facilis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni repellendus unde omnis, incidunt neque accusamus dicta labore tenetur harum natus alias deserunt ab fuga vero at, laudantium consequatur dolor. Accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ad quam obcaecati magnam velit illo iste facilis ratione sit corrupti, quibusdam, et, in voluptatem rem fugiat dolorem eaque nisi tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere qui est modi? Inventore odit quo nulla adipisci, assumenda exercitationem ullam optio possimus molestias modi labore rem ut eligendi qui?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quis dolorum maiores asperiores error cupiditate voluptas id fugit fugiat, possimus deleniti? Maxime soluta omnis iste commodi necessitatibus ex quo laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nobis, sint nihil officiis autem similique omnis exercitationem recusandae rem veniam. Nobis omnis laborum quia ratione explicabo perspiciatis iste deleniti facilis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni repellendus unde omnis, incidunt neque accusamus dicta labore tenetur harum natus alias deserunt ab fuga vero at, laudantium consequatur dolor. Accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ad quam obcaecati magnam velit illo iste facilis ratione sit corrupti, quibusdam, et, in voluptatem rem fugiat dolorem eaque nisi tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere qui est modi? Inventore odit quo nulla adipisci, assumenda exercitationem ullam optio possimus molestias modi labore rem ut eligendi qui?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quis dolorum maiores asperiores error cupiditate voluptas id fugit fugiat, possimus deleniti? Maxime soluta omnis iste commodi necessitatibus ex quo laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nobis, sint nihil officiis autem similique omnis exercitationem recusandae rem veniam. Nobis omnis laborum quia ratione explicabo perspiciatis iste deleniti facilis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni repellendus unde omnis, incidunt neque accusamus dicta labore tenetur harum natus alias deserunt ab fuga vero at, laudantium consequatur dolor. Accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ad quam obcaecati magnam velit illo iste facilis ratione sit corrupti, quibusdam, et, in voluptatem rem fugiat dolorem eaque nisi tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere qui est modi? Inventore odit quo nulla adipisci, assumenda exercitationem ullam optio possimus molestias modi labore rem ut eligendi qui?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quis dolorum maiores asperiores error cupiditate voluptas id fugit fugiat, possimus deleniti? Maxime soluta omnis iste commodi necessitatibus ex quo laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nobis, sint nihil officiis autem similique omnis exercitationem recusandae rem veniam. Nobis omnis laborum quia ratione explicabo perspiciatis iste deleniti facilis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni repellendus unde omnis, incidunt neque accusamus dicta labore tenetur harum natus alias deserunt ab fuga vero at, laudantium consequatur dolor. Accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ad quam obcaecati magnam velit illo iste facilis ratione sit corrupti, quibusdam, et, in voluptatem rem fugiat dolorem eaque nisi tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere qui est modi? Inventore odit quo nulla adipisci, assumenda exercitationem ullam optio possimus molestias modi labore rem ut eligendi qui?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quis dolorum maiores asperiores error cupiditate voluptas id fugit fugiat, possimus deleniti? Maxime soluta omnis iste commodi necessitatibus ex quo laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nobis, sint nihil officiis autem similique omnis exercitationem recusandae rem veniam. Nobis omnis laborum quia ratione explicabo perspiciatis iste deleniti facilis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni repellendus unde omnis, incidunt neque accusamus dicta labore tenetur harum natus alias deserunt ab fuga vero at, laudantium consequatur dolor. Accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ad quam obcaecati magnam velit illo iste facilis ratione sit corrupti, quibusdam, et, in voluptatem rem fugiat dolorem eaque nisi tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere qui est modi? Inventore odit quo nulla adipisci, assumenda exercitationem ullam optio possimus molestias modi labore rem ut eligendi qui?</p>
 </body>
 </html>
