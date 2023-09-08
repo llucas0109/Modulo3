@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            background-color: lightgrey;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        table{
+            width: 300px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 20px;
+        }
+        tbody tr:nth-child(2n){ /*quando coloquei td nao funcionou para pulara uma linha acho que so funciona com linhas mesmos (tr) existe o odd e oe even que representa impar e par*/
+            background-color: lightgrey;
+        }
+        tbody tr:nth-child(odd){ /*or '2n'*/
+            background-color: gray;
+        }
+        tbody tr:nth-child(even){ /*or '2n-1'*/
+            background-color: gray;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabela Grande</h1>
+    <!--Antomia de Tabelas grandes
+        *table
+        *caption
+        *THEAD
+        *TR,TD,TH
+        *TBODY
+        *TR,TD,TH
+        *TFOOT
+        *TR,TD,TH
+    -->
+    <!--Por padrao todo Th colocas os texto ao centro do espçao delimitado e em negrito-->
+    <table>
+        <!--Scope indica para onde estao os dados por exeplo col endica queos dados resultado estaram em coluna ja foot colocamos row lao lado(em linha)-->
+        <!--IMportante caso voce altere o tamanho do th de um thead outalvez tambem so de um th voce tambem altera o tamnho dos td que no caso estao em colum-->
+        <thead>
+            <tr>
+                <th scope="col">estado</th> <!--th para titulos de capeçario-->
+                <th scope="col" style="width: 20px;">populaçao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>sao paulo</td>
+                <td>45.290.190</td>
+            </tr>
+            <tr>
+                <td>
+                    new york
+                </td>
+                <td>
+                    839.202
+                </td>
+            </tr>
+            <tr>
+                <td>los angels</td>
+                <td>912888</td>
+            </tr>
+            <tr>
+                <td>maldivas</td>
+                <td>500.999</td>
+            </tr>
+            <tr>
+                <td>marrocos</td>
+                <td>890.46</td>
+            </tr>
+            <tr>
+                <td>georgia</td>
+                <td>1988.0908</td>
+            </tr>
+            <tr>
+                <td>canada</td>
+                <td>66.723</td>
+            </tr>
+            <tr>
+                <td>florida</td>
+                <td>66.7749</td>
+            </tr>
+            <tr>
+                <td>inglaterra</td>
+                <td>7768.039</td>
+            </tr>
+            <tr>
+                <td>polinia</td>
+                <td>554372</td>
+            </tr>
+            <tr>
+                <td>turquia</td>
+                <td>3000.000</td>
+            </tr>
+            <tr>
+                <td>portugual</td>
+                <td>500.0000</td>
+            </tr>
+            <tr>
+                <td>frança</td>
+                <td>66.583</td>
+            </tr>
+            <tr><td>italia</td><td>89.0928</td></tr>
+        </tbody>
+        <tfoot> <!--Proprio navegador Organiza a Posiçao para baixo da tabela, isso é semantica e o navegador entende-->
+            <th scope="row">Total de habitantes</th>
+            <td>0000.0000</td> <!--Perceba que Ficara ao lado do td-->
+        </tfoot>
+        <caption>Vou para cima</caption>
+    </table>
+</body>
+</html>
