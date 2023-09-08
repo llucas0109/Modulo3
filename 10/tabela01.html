@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira tabela</title>
+    <style>
+        table{
+            border-collapse: collapse; /*Junta ou separa as bordas collapse junta*/
+        }
+        .lo{
+            background-color: yellow;
+        }
+        td{
+            border: 1px solid black;
+            width: 200px;
+            padding-left: 30px;
+        }
+        .gray{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+    <!--
+        HIERAQUIA DE TABELAs (simples)
+        Table = Tabela
+            Table row = linha databela
+                Table header = cabeçalho da tabela
+                    Table data = dados da tabela
+    -->
+    <!--Obedeça a Hieraquia das tabelas voce pode retirar o td ou tr que fecha as tabelas mas coloque q é melhor-->
+    <table>
+        <tr> <!-- Tr é a linha inteira -->
+            <td>
+                A1
+            <td class="lo">
+                B1
+            </td>
+            <td>
+                C1
+            </td>
+        
+        <tr class="gray">
+            <td>
+                A2
+            </td>
+            <td>
+                B2
+            </td>
+            <td>
+                C2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                A3
+            </td>
+            <td>
+                B3
+            </td>
+            <td>
+                C3
+            </td>
+        </tr>
+        <tr>
+            <td>
+                A4
+            </td>
+            <td>
+                B4
+            </td>
+            <td>
+                C4
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
