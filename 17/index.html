@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas basica</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 100px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        col.colum1{
+            background-color: gray;
+        }
+        col.colum2{
+            background-color: rgb(142, 75, 75);
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup> <!--lembrando.. col de lado row vertical nesse caso "colgroup" sera horizontal os efeitos aplicados-->
+            <col class="colum1">
+            <col class="colum2" span="2"> <!--span="2" aplica na coluna do lado-->
+            <col class="colum4">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">profissao</th>
+        </tr>
+        <tr>
+            <td>Ana maria</td>
+            <td>f</td>
+            <td>25</td>
+            <td>jurnalista</td>
+        </tr>
+        <tr>
+            <td>jesson</td>
+            <td>f</td>
+            <td>40</td>
+            <td>jurnalista</td>
+        </tr>
+        <tr>
+            <td>kinberlin</td>
+            <td>f</td>
+            <td>49</td>
+            <td>jurnalista</td>
+        </tr>
+        <tr>
+            <td>walter</td>
+            <td>f</td>
+            <td>21</td>
+            <td>jurnalista</td>
+        </tr>
+        <tr>
+            <td>joa</td>
+            <td>f</td>
+            <td>26</td>
+            <td>jurnalista</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
